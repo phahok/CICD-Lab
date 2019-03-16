@@ -16,8 +16,8 @@ Configurando Gitlab-CE
 # vim /etc/gitlab/gitlab.rb
 
 ...
-alertmanager['enable'] = false
 external_url 'http://192.168.99.10'
+alertmanager['enable'] = false
 gitlab_monitor['enable'] = false
 node_exporter['enable'] = false
 postgres_exporter['enable'] = false

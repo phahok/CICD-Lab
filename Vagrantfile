@@ -3,10 +3,10 @@
 
 machines = {
 	"repo" => {"memory"=>"4096", "cpus"=>"2", "ip" => "10" },
-	"pipeline" => {"memory"=>"1024", "cpus"=>"2", "ip" => "10" },
-	"dev" => {"memory"=>"1024", "cpus"=>"2", "ip" => "10" },
-	"homolog" => {"memory"=>"1024", "cpus"=>"2", "ip" => "10" },
-	"production" => {"memory"=>"1024", "cpus"=>"2", "ip" => "10" },
+	"pipeline" => {"memory"=>"1024", "cpus"=>"2", "ip" => "20" },
+	"dev" => {"memory"=>"1024", "cpus"=>"2", "ip" => "30" },
+	"homolog" => {"memory"=>"1024", "cpus"=>"2", "ip" => "40" },
+	"production" => {"memory"=>"1024", "cpus"=>"2", "ip" => "50" },
 }
 
 Vagrant.configure("2") do |config|
