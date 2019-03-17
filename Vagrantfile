@@ -2,11 +2,10 @@
 # vi: set ft=ruby :
 
 machines = {
-	"repo" => {"memory"=>"4096", "cpus"=>"2", "ip" => "10" },
-	"pipeline" => {"memory"=>"1024", "cpus"=>"2", "ip" => "20" },
-	"dev" => {"memory"=>"1024", "cpus"=>"2", "ip" => "30" },
-	"homolog" => {"memory"=>"1024", "cpus"=>"2", "ip" => "40" },
-	"production" => {"memory"=>"1024", "cpus"=>"2", "ip" => "50" },
+	"repo" => {"memory"=>"4096", "cpus"=>"1", "ip" => "10" },
+	"pipeline" => {"memory"=>"4096", "cpus"=>"1", "ip" => "20" },
+	"homolog" => {"memory"=>"2048", "cpus"=>"1", "ip" => "40" },
+	"production" => {"memory"=>"2048", "cpus"=>"1", "ip" => "50" },
 }
 
 Vagrant.configure("2") do |config|
@@ -20,6 +19,7 @@ Vagrant.configure("2") do |config|
         vb.cpus = "#{conf["cpus"]}"
 	vb.memory = "#{conf["memory"]}"
 	vb.name = "#{name}"
+	vb.gui = false
       end
       
       if File.file?("provision/#{name}.sh")

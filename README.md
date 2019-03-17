@@ -41,4 +41,9 @@ Instalando Jenkins
 # curl http://pkg.jenkins-ci.org/redhat/jenkins.repo -o /etc/yum.repos.d/jenkins.repo
 # rpm --import https://jenkins-ci.org/redhat/jenkins-ci.org.key
 # yum install jenkins
+```
+
+### Running SonarQube on Docker
+```sh
+# docker run -
 ``` 
