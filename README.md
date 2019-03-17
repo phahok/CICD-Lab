@@ -40,10 +40,22 @@ Instalando Jenkins
 ```sh
 # curl http://pkg.jenkins-ci.org/redhat/jenkins.repo -o /etc/yum.repos.d/jenkins.repo
 # rpm --import https://jenkins-ci.org/redhat/jenkins-ci.org.key
-# yum install jenkins
+# yum install jenkins -y
 ```
-
-### Running SonarQube on Docker
+### Instalando Docker na maquina pipeline
 ```sh
-# docker run -
+# yum install -y yum-utils device-mapper-persistent-data lvm2
+# yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
+# yum install docker-ce docker-ce-cli containerd.io
+```
+### Rodando SonarQube no Docker
+```sh
+# docker run -dti --name sonarqube --restart always -p 9000:9000 sonarqube
 ``` 
+
+### Rodando SonatypeNexus OSS no Docker
+```sh
+# docker volume 
+# docker run -dti --name nexus --restart always -p 8081:8081 sonatype/nexus3
+``` 
+
