@@ -2,7 +2,7 @@
 # vi: set ft=ruby :
 
 machines = {
-	"repo" => {"memory"=>"4096", "cpus"=>"1", "ip" => "10" },
+	"scm" => {"memory"=>"4096", "cpus"=>"1", "ip" => "10" },
 	"pipeline" => {"memory"=>"4096", "cpus"=>"1", "ip" => "20" },
 	"homolog" => {"memory"=>"2048", "cpus"=>"1", "ip" => "40" },
 	"production" => {"memory"=>"2048", "cpus"=>"1", "ip" => "50" },
