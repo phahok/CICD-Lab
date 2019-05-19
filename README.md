@@ -15,8 +15,8 @@ $ vagrant up scm --provision
 Instalando Gitlab-CE
 
 ```sh
-[root@scm]# curl https://packages.gitlab.com/install/repositories/gitlab/gitlab-ce/script.rpm.sh | sudo bash
-# yum install -y gitlab-ce
+[root@scm ~]# curl https://packages.gitlab.com/install/repositories/gitlab/gitlab-ce/script.rpm.sh | sudo bash
+[root@scm ~]# yum install -y gitlab-ce
 ```
 
 Configurando Gitlab-CE
