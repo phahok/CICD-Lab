@@ -3,15 +3,22 @@ Material do ambiente do curso de Integração e Entrega Continua com Git, Jenkin
 
 
 ## Aula00 - Apresentando ambiente com Vagrant
-## Aula01 - Iniciando ambiente com maquina repo
-### Maquina Host	
-sudo vagrant up repo --provision
-### Maquina Repo
+
+## Aula01 - Iniciando ambiente com maquina SCM
+	
+```
+$ vagrant up scm --provision
+```
+
+### Maquina SCM
+
 Instalando Gitlab-CE
+
 ```sh
-# curl https://packages.gitlab.com/install/repositories/gitlab/gitlab-ce/script.rpm.sh | sudo bash
+[root@scm]# curl https://packages.gitlab.com/install/repositories/gitlab/gitlab-ce/script.rpm.sh | sudo bash
 # yum install -y gitlab-ce
 ```
+
 Configurando Gitlab-CE
 ```sh
 # vim /etc/gitlab/gitlab.rb
