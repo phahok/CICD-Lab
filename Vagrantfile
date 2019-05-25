@@ -21,14 +21,12 @@ Vagrant.configure("2") do |config|
 	vb.name = "#{name}"
 	vb.gui = false
       end
-      
-      if File.file?("provision/#{name}.sh")
-	      config.vm.provision "shell", path: "provision/#{name}.sh"
-      end 
 
     end
   end
+
   config.vm.provision "shell", inline: <<-SHELL
     yum install -y epel-release vim
   SHELL
+
 end
