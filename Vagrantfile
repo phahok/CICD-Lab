@@ -4,8 +4,8 @@
 machines = {
 	"scm" => {"memory"=>"4096", "cpus"=>"1", "ip" => "10" },
 	"pipeline" => {"memory"=>"4096", "cpus"=>"1", "ip" => "20" },
-	#"homolog" => {"memory"=>"2048", "cpus"=>"1", "ip" => "40" },
-	#"production" => {"memory"=>"2048", "cpus"=>"1", "ip" => "50" },
+	#"homolog" => {"memory"=>"2048", "cpus"=>"1", "ip" => "30" },
+	#"production" => {"memory"=>"2048", "cpus"=>"1", "ip" => "40" },
 }
 
 Vagrant.configure("2") do |config|
