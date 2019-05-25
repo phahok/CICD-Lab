@@ -15,7 +15,6 @@ Instalando Gitlab-CE
 [root@scm ~]# yum install -y gitlab-ce
 ```
 
-<<<<<<< HEAD
 ### Configurando Gitlab-CE
 ```sh
 # vim /etc/gitlab/gitlab.rb
