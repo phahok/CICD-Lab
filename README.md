@@ -53,7 +53,7 @@ Instalando Jenkins
 ```sh
 # curl http://pkg.jenkins-ci.org/redhat/jenkins.repo -o /etc/yum.repos.d/jenkins.repo
 # rpm --import https://jenkins-ci.org/redhat/jenkins-ci.org.key
-# yum install jenkins -y
+# yum install jenkins git java-1.8.0-openjdk -y
 # systemctl enable jenkins
 # systemctl start jenkins
 ```
